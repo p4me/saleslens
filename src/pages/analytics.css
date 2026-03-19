@@ -1,0 +1,116 @@
+/* ─── Page ───────────────────────────────────────────────── */
+.analytics-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ─── Toolbar ────────────────────────────────────────────── */
+.analytics-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.analytics-toolbar-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.analytics-range-btns {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.range-btn {
+  padding: 5px 16px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.range-btn:hover {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.range-btn--active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.range-btn--active:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+/* ─── MoM badge ──────────────────────────────────────────── */
+.analytics-mom-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+}
+
+.mom-up   { color: var(--green); font-weight: 700; }
+.mom-down { color: var(--red);   font-weight: 700; }
+.mom-label{ color: var(--text-muted); }
+.mom-sep  { color: var(--border); }
+.mom-total{ color: var(--text-secondary); font-weight: 600; }
+
+/* ─── Two-column row ─────────────────────────────────────── */
+.analytics-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ─── Stage chart header ─────────────────────────────────── */
+.analytics-stage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.analytics-stage-legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.stage-legend-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* ─── Loading ────────────────────────────────────────────── */
+.loading-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,122 @@
+/* ─── Page layout ────────────────────────────────────────── */
+.deals-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ─── Summary pills ──────────────────────────────────────── */
+.deals-summary {
+  display: flex;
+  gap: 12px;
+}
+
+.deals-pill {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 90px;
+}
+
+.deals-pill--green { border-left: 3px solid var(--green); }
+.deals-pill--red   { border-left: 3px solid var(--red); }
+.deals-pill--yellow{ border-left: 3px solid var(--yellow); }
+
+.deals-pill-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.deals-pill-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* ─── Table card ─────────────────────────────────────────── */
+.deals-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+/* ─── Toolbar ────────────────────────────────────────────── */
+.deals-toolbar {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.deals-search {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.deals-search:focus {
+  border-color: var(--accent);
+  background: #fff;
+}
+
+.deals-filter {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  background: #f8fafc;
+  outline: none;
+  cursor: pointer;
+  min-width: 140px;
+  transition: border-color 0.15s;
+}
+
+.deals-filter:focus {
+  border-color: var(--accent);
+  background: #fff;
+}
+
+/* ─── Cell styles ────────────────────────────────────────── */
+.deals-deal-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.deals-value {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.deals-stage {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.loading-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,106 @@
+/* ─── Page layout ────────────────────────────────────────── */
+.repdetail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ─── Header ─────────────────────────────────────────────── */
+.repdetail-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.repdetail-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  width: fit-content;
+  transition: opacity 0.15s;
+}
+
+.repdetail-back:hover { opacity: 0.75; }
+
+.repdetail-identity {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.repdetail-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.repdetail-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 2px;
+}
+
+.repdetail-region {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ─── KPI grid ───────────────────────────────────────────── */
+.repdetail-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ─── Deals card ─────────────────────────────────────────── */
+.repdetail-deals-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 24px 0;
+  overflow: hidden;
+}
+
+.repdetail-deals-total {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+/* ─── Not found ──────────────────────────────────────────── */
+.repdetail-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 200px;
+  color: var(--text-muted);
+}
+
+/* ─── Loading (shared) ───────────────────────────────────── */
+.loading-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

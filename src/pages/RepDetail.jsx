@@ -53,8 +53,9 @@ const dealColumns = [
   {
     accessorKey: 'closeDate',
     header: 'Close Date',
-    cell: ({ getValue }) =>
-      new Date(getValue()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
+    cell: ({ getValue }) => (
+      <span>{new Date(getValue()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+    ),
   },
   {
     accessorKey: 'status',

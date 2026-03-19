@@ -26,11 +26,16 @@ export default function DataTable({
     state: { sorting, pagination, globalFilter, columnFilters },
     onSortingChange: setSorting,
     onPaginationChange: setPagination,
+    // Parent controls these — no-ops prevent TanStack from throwing
+    // when it tries to call the handlers during sort/re-render
+    onGlobalFilterChange: () => {},
+    onColumnFiltersChange: () => {},
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     getPaginationRowModel: getPaginationRowModel(),
     globalFilterFn: 'includesString',
+    autoResetPageIndex: false,
   })
 
   const { pageIndex, pageSize: ps } = table.getState().pagination
